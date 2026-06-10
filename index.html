@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SortEasy | Learn Sorting</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    width:100%;
+    background:#0077ff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 60px;
+    position:fixed;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:38px;
+    font-weight:bold;
+    color:white;
+}
+
+.logo span{
+    color:#ffd700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:8px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#0077ff;
+}
+
+/* HERO SECTION */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.tag{
+    display:inline-block;
+    background:rgba(255,255,255,0.1);
+    padding:10px 20px;
+    border-radius:30px;
+    margin-bottom:25px;
+    color:#ffd700;
+    font-weight:bold;
+    border:1px solid rgba(255,255,255,0.2);
+}
+
+.hero h1{
+    font-size:70px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#ffd700;
+}
+
+.hero p{
+    font-size:22px;
+    color:#d1d5db;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.btn{
+    text-decoration:none;
+    background:white;
+    color:#0077ff;
+    padding:16px 35px;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0077ff;
+    color:white;
+}
+
+/* FEATURES */
+
+.features{
+    padding:80px 50px;
+    background:#111827;
+}
+
+.features h2{
+    text-align:center;
+    color:#38bdf8;
+    font-size:45px;
+    margin-bottom:50px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:#1f2937;
+    width:300px;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card-icon{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    color:#38bdf8;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.card p{
+    color:#d1d5db;
+    line-height:1.7;
+}
+
+/* FOOTER */
+
+footer{
+    background:#0f172a;
+    text-align:center;
+    padding:20px;
+    color:#9ca3af;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    nav ul{
+        margin-top:15px;
+    }
+
+    .hero h1{
+        font-size:45px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        💡 Sort<span>Easy</span>
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="comparison.html">Comparison</a></li>
+        <li><a href="visualizer.html">DSA Visualizer</a></li>
+    </ul>
+
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <div class="tag">
+            🚀 MINI PROJECT 2026
+        </div>
+
+        <h1>
+            Learn <span>Sorting Algorithms</span><br>
+            the Smart Way
+        </h1>
+
+        <p>
+            Explore Bubble Sort and Quick Sort with interactive
+            comparison tools, visualization and time complexity analysis.
+        </p>
+
+        <a href="comparison.html" class="btn">
+            🚀 Get Started
+        </a>
+
+    </div>
+
+</section>
+
+<!-- FEATURES -->
+
+<section class="features">
+
+    <h2>Project Features</h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="card-icon">⚡</div>
+
+            <h3>Quick Sort</h3>
+
+            <p>
+                Learn how Quick Sort works using divide and conquer technique.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-icon">🔄</div>
+
+            <h3>Bubble Sort</h3>
+
+            <p>
+                Understand Bubble Sort step by step with easy examples.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-icon">📊</div>
+
+            <h3>Visualizer</h3>
+
+            <p>
+                Visualize sorting algorithms and compare execution times.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+    © 2026 SortEasy | Built with HTML, CSS & JavaScript
+</footer>
+
+</body>
+</html>
