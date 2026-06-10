@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>DSA Visualizer</title>
+
+<style>
+
+body{
+    font-family:Arial;
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+input{
+    width:350px;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#1f2937;
+    color:white;
+}
+
+button{
+    padding:12px 20px;
+    background:#0077ff;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.visualizer{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.bar{
+    width:50px;
+    background:#38bdf8;
+    display:flex;
+    align-items:flex-end;
+    justify-content:center;
+    color:white;
+    font-weight:bold;
+}
+
+.home-btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#0077ff;
+    color:white;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>DSA Visualizer</h1>
+
+<input type="text" id="numbers" placeholder="5,3,8,1,2">
+
+<button onclick="visualize()">Visualize</button>
+
+<div class="visualizer" id="visualizer"></div>
+
+<a href="index.html" class="home-btn">⬅ Back Home</a>
+
+<script>
+
+function visualize(){
+
+let arr=document.getElementById("numbers").value
+.split(",")
+.map(Number);
+
+let visualizer=document.getElementById("visualizer");
+
+visualizer.innerHTML="";
+
+arr.forEach(num=>{
+
+let bar=document.createElement("div");
+
+bar.classList.add("bar");
+
+bar.style.height=(num*20)+"px";
+
+bar.innerHTML=num;
+
+visualizer.appendChild(bar);
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
